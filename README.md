@@ -1,6 +1,6 @@
-# BridgeFour
+# FormFour
 
-**Your loop has nowhere to go, so it never finishes.** BridgeFour keeps your BPM and your 4 chords and plays 4 bars as the pocket, then writes a contrasting 4-bar bridge (held strings + pedal bass, trumpet answer, or fixed pedal) so the original loop can return as the hook. Export the 8 bars as a seamless WAV plus matching MIDI.
+**Your loop has nowhere to go, so it never finishes.** FormFour keeps your BPM and your 4 chords and plays 4 bars as the pocket, then writes a contrasting 4-bar bridge (held strings + pedal bass, trumpet answer, or fixed pedal) so the original loop can return as the hook. Export the 8 bars as a seamless WAV plus matching MIDI.
 
 - Static HTML/CSS/JS, no account, no database. Settings stay in localStorage.
 - Chairs: acoustic grand piano, upright bass, nylon guitar, trumpet, string ensemble, acoustic kit (FluidR3 GM, CC BY 3.0, Frank Wen).
@@ -16,9 +16,9 @@
 | DoubleFour | Subdivision / gear change on the same pocket |
 | GhostFour | Quiet anticipatory ghosts |
 | SpaceFour | Air so the hook can slam |
-| **BridgeFour** | Four bars of contrasting bridge so the loop has a place to go and the track can finish |
+| **FormFour** | Four bars of contrasting bridge so the loop has a place to go and the track can finish |
 
-Yesterday was DoubleFour (double-time feel). BridgeFour does not change subdivision. It creates form: a real bridge section.
+Yesterday was DoubleFour (double-time feel). FormFour does not change subdivision. It creates form: a real bridge section.
 
 ## Pricing recommendation
 

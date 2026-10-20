@@ -1,4 +1,4 @@
-// BridgeFour — four-bar bridge desk
+// FormFour — four-bar bridge desk
 // WorkinWithAI audio engine rules enforced.
 
 const SHA = '044fab8e1456bfafc5776e86dfd6bb8697149aef';
@@ -337,7 +337,7 @@ function onMIDI(msg) {
 }
 
 // Punch list
-document.getElementById('punch').textContent = `BridgeFour punch
+document.getElementById('punch').textContent = `FormFour punch
 BPM ${state.bpm} · Key ${state.key}
 Chords: ${state.chords.join(' ')}
 1-4: pocket (piano stabs, bass root, kit, nylon)

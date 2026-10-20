@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BridgeFour — four-bar bridge desk</title>
+  <meta name="description" content="Your loop has nowhere to go. BridgeFour writes a live-instrument four-bar bridge so the track can leave and come home." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+<div class="tap" id="tap"><button id="tapBtn">Tap to start audio</button><p>iOS: the silent switch mutes Web Audio. Flip it off to hear the chairs.</p></div>
+<main>
+  <p class="eyebrow">WorkinWithAI · live chairs</p>
+  <h1>BridgeFour</h1>
+  <p class="lead">Four-bar bridge desk. The loop is stuck because it has nowhere to go. Session players write a contrasting bridge — held strings, pedal bass, sparse kit, a melodic answer — so the original pocket can return as the hook and the track finishes. Live FluidR3 grand piano, upright bass, nylon, trumpet, strings, and acoustic kit. Not a subdivision change. Not ghosts. A real place the song can travel.</p>
+  <p class="status" id="status">Seating chairs…</p>
+  <p class="eyebrow">Your loop</p>
+  <div class="row inputs">
+    <label>BPM <input id="bpm" type="number" min="60" max="180" step="1" value="92" /></label>
+    <label>Key <select id="key"></select></label>
+    <label class="grow">4 chords <input id="chords" placeholder="Am F C G" value="Am F C G" /><small id="chordErr"></small></label>
+    <label>Bars <select id="bars"><option>4</option><option selected>8</option></select></label>
+  </div>
+  <p class="eyebrow">Bridge recipe</p>
+  <div class="row" id="recipes"></div>
+  <p class="eyebrow">Chairs</p>
+  <div class="row" id="chairs"></div>
+  <p class="eyebrow">Form · your loop 1–4 · bridge 5–8</p>
+  <div class="bars" id="bars8"></div>
+  <p class="eyebrow">Web MIDI</p>
+  <div class="row inputs">
+    <label>In <select id="midiIn"><option value="">(none)</option></select></label>
+    <small id="midiNote">Hardware keyboard drives note on/off. On-screen keys are fallback only.</small>
+  </div>
+  <p class="eyebrow">License</p>
+  <div class="row inputs"><span id="licState" class="status">Locked (demo)</span><input id="licKey" placeholder="License key (demo: any BF- key)" /><button class="mini" id="licBtn">Unlock</button></div>
+  <h2>Punch list</h2>
+  <pre id="punch"></pre>
+  <p class="status">Samples: FluidR3_GM (Frank Wen, CC BY 3.0) via gleitz/midi-js-soundfonts pinned @044fab8. iOS: the silent switch mutes Web Audio.</p>
+</main>
+<div class="dock">
+  <button id="playA">A · Your loop</button>
+  <button id="playB">B · Full form</button>
+  <button id="playBridge">Bridge only</button>
+  <button class="ghost" id="stop">Stop</button>
+  <button class="ghost" id="exportWav">Export WAV</button>
+  <button class="ghost" id="exportMid">Export MIDI</button>
+  <button class="ghost" id="copy">Copy punch</button>
+</div>
+<script type="module" src="./app.js"></script>
+</body>
+</html>
